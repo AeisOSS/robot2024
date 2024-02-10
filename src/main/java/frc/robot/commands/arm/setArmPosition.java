@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 public class setArmPosition extends Command {
 	private Arm arm;
 	protected double targetPosition_rad; // did I do this right?
-
+//the protected field allows all subfolders to gain access to this command. Is it not unnecessary to use protected rather than private here?
 	/** Creates a new setArmPosition. */
 	public setArmPosition(Arm arm, double targetPosition_rad) {
 		this.arm = arm;
